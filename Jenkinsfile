@@ -20,7 +20,7 @@ pipeline {
         stage('checkout') {
             steps {
                 echo 'checking out code....'
-                git credentialsId: 'github-ssh',branch:'testBranch',url:'https://github.com/ShenyaW/shenywywGithub.git'
+                git credentialsId: 'github-ssh',branch:'testBranch',url:'git@github.com:ShenyaW/shenywywGithub.git'
                 echo 'checked'
             }
         }
