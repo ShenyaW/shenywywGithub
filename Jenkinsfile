@@ -28,5 +28,6 @@ pipeline {
             steps {
                 echo 'build success'
             }
+        }
     }
 }
