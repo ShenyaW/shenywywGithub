@@ -11,7 +11,7 @@ pipeline {
         APP_VERSION='0.0.1-SNAPSHOT'
     }
 
-    option{
+    options{
         ubilldDiscarder(logRotator(numTokeepStr:'10'))
         timestamp()
         timeout(time:30,unit:'MINUTES')
