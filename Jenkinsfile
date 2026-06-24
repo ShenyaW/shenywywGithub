@@ -20,7 +20,8 @@ pipeline {
         stage('checkout') {
             steps {
                 echo 'checking out code....'
-                git branch 'testBranch',url:'https://github.com/ShenyaW/shenywywGithub.git'
+                git branch:'testBranch',url:'https://github.com/ShenyaW/shenywywGithub.git'
+                echo 'checked'
             }
         }
         stage('Build') {
