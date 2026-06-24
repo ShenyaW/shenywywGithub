@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools{
-        maven 'Maven 3.6.3'
+        maven 'Maven3.6.3'
         jdk 'JDK21'
     }
 
@@ -12,7 +12,7 @@ pipeline {
     }
 
     options{
-        ubilldDiscarder(logRotator(numTokeepStr:'10'))
+        buildDiscarder(logRotator(numTokeepStr:'10'))
         timestamp()
         timeout(time:30,unit:'MINUTES')
     }
