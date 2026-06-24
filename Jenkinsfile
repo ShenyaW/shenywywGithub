@@ -20,11 +20,12 @@ pipeline {
         stage('checkout') {
             steps {
                 echo 'checking out code....'
-                git branch 'testBranch',
-                    url:'https://github.com/ShenyaW/shenywywGithub.git',
-                    credentialsId:'Github-token'
-                echo 'checked'
+                git branch 'testBranch',url:'https://github.com/ShenyaW/shenywywGithub.git'
             }
         }
+        stage('Build') {
+            steps {
+                echo 'build success'
+            }
     }
 }
