@@ -20,6 +20,7 @@ pipeline {
         stage('checkout') {
             steps {
                 echo 'checking out code....'
+                bat 'whoami'
                 git credentialsId: 'github-ssh',branch:'testBranch',url:'git@github.com:ShenyaW/shenywywGithub.git'
                 echo 'checked'
             }
